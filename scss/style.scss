@@ -1,0 +1,215 @@
+@import "normalize.scss";
+@import "layout.scss";
+@import "slick";
+//@import "slick-theme";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+	color:  #303030;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 19.17px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	letter-spacing: 0.23em;
+	text-transform: uppercase;
+	background: url(../img/fon.jpg) no-repeat;
+	size: cover;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.slick-arrow{
+	border: none;
+	background: none;
+	border-right: 0;
+	padding: 0;
+
+	position: absolute;
+	line-height: 0;
+	font-size: 0;
+	cursor: pointer;
+	top: 50%;
+	margin-top: -5%;
+	outline: none;
+	//color: $primary-color;
+	&:hover{
+		color: #000;
+	}
+	svg{
+		display: block;
+		height: 42px;
+		width: 96px;
+		fill: currentColor;
+	}
+}
+.ba-slider-prev{
+	left: 0;
+}
+.ba-slider-next{
+	right: 0;
+}
+.slick-dots{
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	right: 0;
+	margin: 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	li{
+		display: inline-block;
+		margin: 0 5px;
+	}
+	button{
+		border: 0;
+		background: transparent;
+		display: block;
+		width: 10px;
+		height: 10px;
+		background-color: #fff;
+		border: 1px solid #fff;
+		padding: 0;
+		border-radius: 50%;
+		outline: none;
+		line-height: 0;
+		font-size: 0;
+		color: transparent;
+		cursor: pointer;
+	}
+	.slick-active{
+		button{
+			background: transparent;
+		}
+	}
+}
+.ba-team .ba-team-slider .ba-slide {
+	margin-left: 44px;
+}
+.ba-slide{
+	//padding-left: 45px;
+}
+.ba-container{
+	text-align: center;
+	.ba-contant{
+		padding-top: 7%;
+		padding-bottom: 1%;
+	}
+}
+.ba-title{
+	font-family: 'Poppins', sans-serif;
+	color:  #000000;
+	font-size: 86px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 800;
+	line-height: 90px;/* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	letter-spacing: 0.03em;
+	padding-bottom: 8.2%;
+}
+
+.izo {
+	background: url(../img/img-1.png) no-repeat 50% 50%;
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.izo:hover,
+.izo-2:hover,
+.izo-3:hover,
+.izo-4:hover {
+	background: url(../img/img-fon.png) no-repeat 50% 50%;
+	-moz-transition: all 1s ease-in-out;
+	  -webkit-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;
+	    opacity: 0.5;
+}
+
+.izo-2 {
+	background: url(../img/img-2.png) no-repeat 50% 50%;
+	display: block;
+	width: 300px;
+		height: 300px;
+}
+
+.izo-2:hover {
+	background: url(../img/img-fon.png) no-repeat 50% 50%;
+}
+.izo-3 {
+	background: url(../img/img-3.png) no-repeat 50% 50%;
+	display: block;
+	width: 300px;
+		height: 300px;
+}
+
+.izo-3:hover {
+	background: url(../img/img-fon.png) no-repeat 50% 50%;
+}
+.izo-4 {
+	background: url(../img/img-4.png) no-repeat 50% 50%;
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.izo-4:hover {
+	background: url(../img/img-fon.png) no-repeat 50% 50%;
+}
+.ba-container{
+	background: url(../img/first-element.png) no-repeat 83% 7%;
+
+}
+.ba-wrap{
+	background: url(../img/second-element.png) no-repeat 0% 58%;
+}
+
